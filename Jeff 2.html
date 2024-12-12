@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Company - Consulenza Società Benefit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./fcfyf.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-wrapper {
+            background-color: rgba(55, 193, 228, 0.95);
+            min-height: 100vh;
+        }
+
+        .transparent-header {
+            background-color: rgba(55, 193, 228, 0.95);
+            backdrop-filter: blur(5px);
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo-image {
+            height: 40px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="transparent-header fixed w-full z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <img src="./lop-removebg-preview.png" alt="Jeff Company Logo" class="logo-image">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Il resto del codice rimane invariato -->
+    <div class="hero-bg">
+        <div class="container mx-auto px-6 text-center text-white">
+            <h1 class="text-5xl font-bold mb-6 text-shadow">JEFF COMPANY</h1>
+            <p class="text-2xl text-shadow">Guidiamo le aziende nel percorso verso la sostenibilità e l'impatto positivo</p>
+        </div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+        <!-- Main Content -->
+        <main class="container mx-auto px-6 py-12">
+            <!-- Informazioni Societarie -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Informazioni Societarie</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-semibold text-gray-700 mb-2">Costituzione</h3>
+                        <p class="text-gray-600 mb-4">
+                            Data: 15 dicembre 2024<br>
+                            Luogo: Roma, Italia
+                        </p>
+
+                        <h3 class="font-semibold text-gray-700 mb-2">Sede Principale</h3>
+                        <p class="text-gray-600 mb-4">
+                            Via del Corso, 123<br>
+                            00186 Roma, Italia
+                        </p>
+
+                        <h3 class="font-semibold text-gray-700 mb-2">Compagine Sociale</h3>
+                        <ul class="text-gray-600 mb-4 list-disc list-inside">
+                            <li>Mario Rossi - Socio fondatore e CEO</li>
+                            <li>Laura Bianchi - Socia e Direttore Operativo</li>
+                            <li>Giovanni Verdi - Socio e Responsabile Sviluppo</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-gray-700 mb-2">Oggetto Sociale</h3>
+                        <p class="text-gray-600 mb-4">
+                            Consulenza strategica e operativa per la trasformazione e gestione di società benefit, 
+                            supporto nell'implementazione di progetti di sostenibilità e impatto sociale, 
+                            assistenza nella redazione di relazioni d'impatto e bilanci di sostenibilità.
+                        </p>
+
+                        <h3 class="font-semibold text-gray-700 mb-2">Ultimo Bilancio Depositato</h3>
+                        <p class="text-gray-600 mb-4">
+                            Bilancio 2024<br>
+                            Depositato in data: 30 aprile 2025<br>
+                            Fatturato: € 450.000<br>
+                            Utile netto: € 75.000
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Descrizione Attività -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">La Nostra Attività</h2>
+                
+                <div class="prose max-w-none text-gray-600">
+                    <p class="mb-4">
+                        Jeff Company è una società di consulenza specializzata nel supportare le aziende 
+                        nel loro percorso di trasformazione in Società Benefit. Il nostro team di esperti 
+                        fornisce assistenza completa in tutte le fasi del processo:
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Analisi preliminare e valutazione di fattibilità</li>
+                        <li>Supporto nella definizione degli obiettivi di beneficio comune</li>
+                        <li>Assistenza nel processo di trasformazione societaria</li>
+                        <li>Implementazione di sistemi di misurazione dell'impatto</li>
+                        <li>Redazione della relazione annuale d'impatto</li>
+                        <li>Formazione del personale e stakeholder engagement</li>
+                    </ul>
+
+                    <p class="mb-4">
+                        La nostra missione è facilitare la transizione verso un modello di business 
+                        che integri la creazione di valore economico con l'impatto positivo sulla 
+                        società e l'ambiente, contribuendo alla diffusione del modello Società Benefit 
+                        nel tessuto imprenditoriale italiano.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white mt-12">
+            <div class="container mx-auto px-6 py-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <p class="text-sm opacity-80">© 2024 Jeff Company. Tutti i diritti riservati.</p>
+                    </div>
+                    <div class="text-sm opacity-80">
+                        P.IVA: 12345678901 | REA: RM-123456
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
