@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeff Company - Consulenza e software</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <script>
+        window.onload = function() {
+            // Controlla se l'utente ha già accettato i cookie
+            if (!localStorage.getItem('cookieConsent')) {
+                document.getElementById('privacy-banner').style.display = 'block';
+            } else {
+                document.getElementById('privacy-banner').style.display = 'none';
+            }
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('privacy-banner').style.display = 'none';
+        }
+    </script>
     <style>
         .hero-bg {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./fcfyf.png);
@@ -153,18 +168,18 @@
             </div>
         </footer>
     </div>
-    <div id="privacy-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 z-50">
+    <div id="privacy-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 z-50" style="display: none;">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center justify-between gap-4">
                 <div class="text-sm md:text-base">
                     Questo sito utilizza i cookie per migliorare l'esperienza dell'utente. Utilizzando il nostro sito web, accetti tutti i cookie in conformità con la nostra Privacy Policy.
                 </div>
                 <div class="flex gap-3">
-                    <button onclick="document.getElementById('privacy-banner').style.display = 'none';" 
+                    <button onclick="acceptCookies()" 
                             class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-sm">
                         Accetta tutti
                     </button>
-                    <button onclick="document.getElementById('privacy-banner').style.display = 'none';" 
+                    <button onclick="acceptCookies()" 
                             class="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition-colors text-sm">
                         Gestisci preferenze
                     </button>
