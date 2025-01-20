@@ -5,21 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeff Company - Consulenza e software</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-    <script>
-        window.onload = function() {
-            // Controlla se l'utente ha già accettato i cookie
-            if (!localStorage.getItem('cookieConsent')) {
-                document.getElementById('privacy-banner').style.display = 'block';
-            } else {
-                document.getElementById('privacy-banner').style.display = 'none';
-            }
-        }
-
-        function acceptCookies() {
-            localStorage.setItem('cookieConsent', 'accepted');
-            document.getElementById('privacy-banner').style.display = 'none';
-        }
-    </script>
     <style>
         .hero-bg {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./fcfyf.png);
@@ -155,6 +140,24 @@
         </main>
 
         <!-- Footer -->
+        <div class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            <div class="text-sm md:text-base flex-grow">
+                <p class="mb-2">🔒 La tua privacy è importante per noi</p>
+                <p class="text-gray-300">Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. Continuando la navigazione, accetti la nostra Privacy Policy.</p>
+            </div>
+            <div class="flex gap-3 flex-shrink-0">
+                <a href="#" class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-sm whitespace-nowrap">
+                    Privacy Policy
+                </a>
+                <a href="#" class="px-6 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition-colors text-sm whitespace-nowrap">
+                    Cookie Policy
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
         <footer class="bg-gray-800 text-white mt-12">
             <div class="container mx-auto px-6 py-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
@@ -167,25 +170,6 @@
                 </div>
             </div>
         </footer>
-    </div>
-    <div id="privacy-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 z-50" style="display: none;">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                <div class="text-sm md:text-base">
-                    Questo sito utilizza i cookie per migliorare l'esperienza dell'utente. Utilizzando il nostro sito web, accetti tutti i cookie in conformità con la nostra Privacy Policy.
-                </div>
-                <div class="flex gap-3">
-                    <button onclick="acceptCookies()" 
-                            class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-sm">
-                        Accetta tutti
-                    </button>
-                    <button onclick="acceptCookies()" 
-                            class="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition-colors text-sm">
-                        Gestisci preferenze
-                    </button>
-                </div>
-            </div>
-        </div>
     </div>
 </body>
 </html>
